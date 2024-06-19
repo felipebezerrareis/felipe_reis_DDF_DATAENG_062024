@@ -37,20 +37,37 @@ Existem duas principais vantagens em se adotar a DADOSFERA:
 # Item 2 - Sobre a Dadosfera
 
 ## Carregamento
-![print carregamento](./assets/imagens/printcarregamento.png)
 
-Nome: spacemanidol/product-search-corpus
-Descrição: Carregamento spacemanidol/product-search-corpus para execução do Case Tech Felipe_Reis_DDF_DATAENG_062024
+Pipeline de importação do dataset
+![Print do pipeline](./assets//imagens/amazon_review_polarity.png)
 
-[Lint REST API dataset source](https://huggingface.co/api/datasets/spacemanidol/product-search-corpus)
-
-[Link alternativo](https://huggingface.co/api/datasets/trec-product-search/product-search-corpus)
 
 ## Análise descritiva
 
-## Catálogo
+Na busca por possíveis anomalias, foram encontradas instancias que tinham a feature principal do dataset, review, nula. Para mitigar os efeitos indesejados, estas instâncias foram filtradas do dataset utilizando um pipeline jupyter no modulo Integliência.
+
+
 
 # Item 3 - Sobre GenAI e LLMs
+
+Dentro do projecto FELIPE_REIS_DDF_ENG_DADOS_062024 foi criado um pipeline para recuperação dos dados, tratamento e classificação.
+
+![Print do pipeline modulo inteligencia](./assets//imagens/projeto_modulo_inteligencia.png)
+
+Neste pipeline a idéia foi enriquecer o dataset com uma nova feature por meio de LLM.
+
+A princípio o dataset contém as features:
+ - Polaridade : binária indicando se o cliente deu uma review positiva ou negativa
+ - Título : campo texto com o heading da review
+ - Review : campo texto com a review
+
+Nesse cenário seria interessante entender sobre qual produto ou categoria de produto a revisão está relacionada. Assim seria possível entender qual tipo de produto está sendo melhor aceito pelos clientes e, a partir desta informação, tomar medidas para melhorar as vendas dos produtos que estão sendo desqualificados.
+
+Pensando dessa forma, foi utilizado LLM por meio da importação da biblioteca da openai para criar a feature "Categoria" dentro do dataset. 
+![Print do pipeline](./assets//imagens/definicao_funcao_productname.pngcateg)
+
+Exemplo da feature Category dentro do dataset
+![Print da nova feature](./assets//imagens/category.png)
 
 
 # Item 4 - Sobre SQL e Python
@@ -63,3 +80,4 @@ Descrição: Carregamento spacemanidol/product-search-corpus para execução do 
 
 
 
+ felipe2024#
