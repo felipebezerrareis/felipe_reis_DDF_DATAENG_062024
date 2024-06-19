@@ -74,11 +74,3 @@ Exemplo da feature Category dentro do dataset
 # Item 4 - Sobre SQL e Python
 
 # Item 5 - Sobre Data Apps
-
-
-
-
-
-
-
- felipe2024#
