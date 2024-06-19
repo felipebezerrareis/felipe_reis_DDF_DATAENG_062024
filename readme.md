@@ -31,7 +31,7 @@ Existem duas principais vantagens em se adotar a DADOSFERA:
  - One ticket, all rides - substituição do custo da arquitetura atual para a DADOSFERA com entrega da solução completa.
 
 
-[Link para vídeo de apresentação](https://youtu.be/I7MS01q03vA)
+[Link para vídeo de apresentação](https://youtu.be/6gPQH5IskJA)
 
 
 # Item 2 - Sobre a Dadosfera
