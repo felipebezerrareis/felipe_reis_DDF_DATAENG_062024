@@ -19,6 +19,9 @@ Apresentamos a solução DADOSFERA com 2 cenários:
 e data apps dentro da DADOSFERA consolidado todas as etapas do processo.
 - o segundo cenário considera a ampliação para analytics e data apps no ambiente dadosfera e a integração com a coleta e data lake já existentes.
 
+
+![Print do diagrama](./assets//imagens/diagramas_case.png)
+
 [Link para o diagrama](https://app.eraser.io/workspace/jv24ayPmOmPFkkuhCnfD?origin=share)
 
 
@@ -72,5 +75,41 @@ Exemplo da feature Category dentro do dataset
 
 
 # Item 4 - Sobre SQL e Python
+
+## Geração de Valor
+
+Com a etapa de LLM enriquecendo o dataset com a categoria dos produtos das reviews podemos gerar insights de valor. Para tal vamos realizar perguntas/consultas no dataset
+
+1. Quais são as 5 categorias com maior frequência de reviews negativas?
+
+
+`
+select top 5 category, count(*) as frequency from TB__SGI1RN__DATASET_AMAZON_REVIEW_CATEGORY where polarity = 2 group by category order by count(*) desc
+`
+![Print da nova consulta sql](./assets//imagens/top_categories_negative_review.png)
+
+2. De forma analoga, tabmém é interessante saber quais são os produtos com mais reviews positivas
+
+`
+select top 5 category, count(*) as frequency from TB__SGI1RN__DATASET_AMAZON_REVIEW_CATEGORY where polarity = 1 group by category order by count(*) desc
+`
+
+![Print da nova consulta sql](./assets//imagens/top_categories_positive_review.png)
+
+3. Outro conhecimento importante para entender a amplitude de reviews por categoria é a diferença entre a quantidade de reviews entre a categoria que tem mais e a categoria que tem menos reviews. Isto podemos observar no gráfico de barras gerado com a seguinte consulta sql:
+
+`
+select top 50 category, count(*) as frequency from TB__SGI1RN__DATASET_AMAZON_REVIEW_CATEGORY group by category order by count(*) desc
+`
+
+resultando no gráfico:
+
+![Print da nova consulta sql](./assets//imagens/reviews_frequency.png)
+
+
+Apresentando o dashboard com as consultadas realizadas.
+
+![Print da nova consulta sql](./assets//imagens/dashboard.png)
+
 
 # Item 5 - Sobre Data Apps
