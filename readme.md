@@ -1,10 +1,10 @@
 
 
-### case tech Felipe_Reis_DDF_DATAENG_062024
+# Case Tech Felipe_Reis_DDF_DATAENG_062024
 
-# Item 1 - Sobre Storytelling e Apresentação
+## Item 1 - Sobre Storytelling e Apresentação
 
-## Apresentação da solução
+### Apresentação da solução
 
 ### Principal problema a ser resolvido
 
@@ -37,21 +37,21 @@ Existem duas principais vantagens em se adotar a DADOSFERA:
 [Link para vídeo de apresentação](https://youtu.be/6gPQH5IskJA)
 
 
-# Item 2 - Sobre a Dadosfera
+## Item 2 - Sobre a Dadosfera
 
-## Carregamento
+### Carregamento
 
 Pipeline de importação do dataset
 ![Print do pipeline](./assets//imagens/amazon_review_polarity.png)
 
 
-## Análise descritiva
+### Análise descritiva
 
 Na busca por possíveis anomalias, foram encontradas instancias que tinham a feature principal do dataset, review, nula. Para mitigar os efeitos indesejados, estas instâncias foram filtradas do dataset utilizando um pipeline jupyter no modulo Integliência.
 
 
 
-# Item 3 - Sobre GenAI e LLMs
+## Item 3 - Sobre GenAI e LLMs
 
 Dentro do projecto FELIPE_REIS_DDF_ENG_DADOS_062024 foi criado um pipeline para recuperação dos dados, tratamento e classificação.
 
@@ -74,9 +74,9 @@ Exemplo da feature Category dentro do dataset
 
 
 
-# Item 4 - Sobre SQL e Python
+## Item 4 - Sobre SQL e Python
 
-## Geração de Valor
+### Geração de Valor
 
 Com a etapa de LLM enriquecendo o dataset com a categoria dos produtos das reviews podemos gerar insights de valor. Para tal vamos realizar perguntas/consultas no dataset
 
@@ -112,4 +112,41 @@ Apresentando o dashboard com as consultadas realizadas.
 ![Print da nova consulta sql](./assets//imagens/dashboard.png)
 
 
-# Item 5 - Sobre Data Apps
+## Item 5 - Sobre Data Apps
+
+Uma análise interessante para o time de negócio, seria uma recomendação de quais categorias de produtos poderiam passar por uma substituição de SKUs, a fim de aumentar as chances de seus clientes encontrarem produtos que vão gostar de ter comprado.
+
+Um DataApp é ideal para essa situação já que o time de compras não tem especialistas em dados.
+
+[Link para o DataApp](https://app-intelligence-treinamentos.dadosfera.ai/pbp-service-dataappmetareviews-4a97db95-bc94-4d98c3fd6816-16f8-4648_8501/)
+
+
+## Assets do Case Tech
+
+Print do projeto no módulo inteligência.
+
+![Print](./assets//imagens/print_final_modulo_inteligencia.png)
+
+Print DataApp no módulo Catalog
+
+![Printl](./assets//imagens/printi_dataapp_catalog.png)
+
+Print do Dashboard criado no módulo Visualização
+
+![Printl](./assets//imagens/print_dashboard.png)
+
+Print do Dashboard criado no módulo Visualização
+
+![Printl](./assets//imagens/print_catalog.png)
+
+
+
+## Conclusão
+
+Muito interessante conhecer a plataforma dadosfera e perceber que o produto é realmente um presente para a indústria.
+
+Dentro do teste acho que poderia ter melhorado a maneira como eu importei os dados entre os módulos. Acredito que tenha uma forma melhor e que eu não conheci ainda pela documentação.
+
+Com mais tempo faria com certeza o Item Bonus
+
+Agradeço a oportunidade. Obrigado pela atenção e até breve.w
