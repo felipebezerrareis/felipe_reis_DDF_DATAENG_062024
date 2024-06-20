@@ -147,6 +147,8 @@ Muito interessante conhecer a plataforma dadosfera e perceber que o produto é r
 
 Dentro do teste acho que poderia ter melhorado a maneira como eu importei os dados entre os módulos. Acredito que tenha uma forma melhor e que eu não conheci ainda pela documentação.
 
-Com mais tempo faria com certeza o Item Bonus
+Com mais tempo faria com certeza o Item Bonus.
+
+Teria ficado mais feliz com o resultado se tivesse escolhido um dataset mais elaborado para trazer insights mais interessantes. Fiz o trade off pela praticidade e economia de tempo, perdendo um pouco na qualidade do resultado.
 
 Agradeço a oportunidade. Obrigado pela atenção e até breve.w
